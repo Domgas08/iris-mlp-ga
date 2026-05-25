@@ -78,7 +78,7 @@ public class Experiment {
 
 
 
-        ///---------Testavimas---------
+        //---------Testavimas---------
         Chromosoma bestChromosoma = ea.getabsoluteWinnerChromosome();
         Tinklas testavimoTinklas = new Tinklas(parametrai);
         testavimoTinklas.setValuesFromChromoseGenes(bestChromosoma.getGenai());
