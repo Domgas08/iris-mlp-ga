@@ -91,7 +91,6 @@ public class EvuliucinisAlgoritmas {
 
         this.population = newPopulation;
 
-        fitPopulation(trainingData);
     }
 
 
