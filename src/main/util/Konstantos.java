@@ -13,6 +13,9 @@ public final class Konstantos {
     public static final double RAND_LOW_BOUND = -1.0;
     public static final double RAND_HIGH_BOUND = 1.0;
 
+    public static final double FIRST_CLASS_LIMIT = 1.5;
+    public static final double SECOND_CLASS_LIMIT = 2.5;
+
 
 
 }

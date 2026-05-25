@@ -113,12 +113,12 @@ public class Experiment {
             int suapvalintaPrognoze;
 
 
-            //hardcoded: <=1.5, tai pirma klase (main.model.Iris-setosa), jei atsakymas  nuo 1.5 iki 2.5 tai antra klasė (main.model.Iris-versicolor),
-            //jei atsakymas nuo 2.5, tai atsakymas trečia klasė (main.model.Iris-virginica).
-            if(prognoze <= 1.5) {
+            //<=1.5, tai pirma klase (Iris-setosa), jei atsakymas  nuo 1.5 iki 2.5 tai antra klasė (Iris-versicolor),
+            //jei atsakymas nuo 2.5, tai atsakymas trečia klasė (Iris-virginica).
+            if(prognoze <= Konstantos.FIRST_CLASS_LIMIT) {
                 suapvalintaPrognoze = 1;
             }
-            else if(prognoze <= 2.5) {
+            else if(prognoze <= Konstantos.SECOND_CLASS_LIMIT) {
                 suapvalintaPrognoze = 2;
             }
             else {
