@@ -17,9 +17,9 @@ public class Iris {
         this.petalWidth = Double.parseDouble(petalWidth);
 
         //kokia gele pagal skaiciu
-        if(species.equals("main.model.Iris-setosa")){this.species = 1;}
-        else if (species.equals("main.model.Iris-versicolor")){this.species = 2;}
-        else  if (species.equals("main.model.Iris-virginica")){this.species = 3;}
+        if(species.equals("Iris-setosa")){this.species = 1;}
+        else if (species.equals("Iris-versicolor")){this.species = 2;}
+        else  if (species.equals("Iris-virginica")){this.species = 3;}
         else {
             throw new IllegalArgumentException("Nežinoma gėlių rūšis: " + species);
         }

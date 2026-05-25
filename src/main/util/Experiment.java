@@ -50,9 +50,7 @@ public class Experiment {
         {
             ea.makeNextGeneration(trainingData);
 
-            //progressbar'as kas 30 generacijų
-
-
+            //progressbar'as kas 30 generacijų [pagražintas su AI pagalba, kad nebūtų nuobodu žiūrėt]
             if (K % 30 == 0 || K == parametrai.NUMBER_OF_GENERATIONS) {
                 int procentai = (K * 100) / parametrai.NUMBER_OF_GENERATIONS;
 
@@ -74,26 +72,6 @@ public class Experiment {
                 double klaida = ea.getabsoluteWinnerChromosome().getFitness();
                 System.out.print("\r" + gele + " " + bar + " " + procentai + "% | Klaida: " + String.format("%.4f", klaida) + "  ");
             }
-
-
-//
-//            if (K % 30 == 0 || K == parametrai.NUMBER_OF_GENERATIONS) {
-//                int procentai = (K * 100) / parametrai.NUMBER_OF_GENERATIONS;
-//
-//                // Sugeneruojame stulpelius (1 stulpelis kas 4 procentus)
-//                StringBuilder bar = new StringBuilder("[");
-//                for (int k = 0; k < 25; k++) {
-//                    if (k < (procentai / 4)) bar.append("█");
-//                    else bar.append("░");
-//                }
-//                bar.append("]");
-//                double geriausiaKlaida = ea.getabsoluteWinnerChromosome().getFitness();
-//                System.out.print("\rProgresas" + bar + " " + procentai + "% | Geriausia klaida: " + String.format("%.4f", geriausiaKlaida));
-//            }
-//
-
-
-
 
 
         }

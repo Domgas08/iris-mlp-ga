@@ -8,13 +8,12 @@ import java.util.List;
 
 void main() {
     Skaitymas skaitymas = new Skaitymas();
-
     Logintojas.inicializuoti();
 
     List<Iris> visiDuomenys = skaitymas.skaityti();
 
 
-    for(int K = 1; K <= 20; K++)
+    for(int K = 1; K <= 30; K++)
     {
         System.out.println("------------------");
         System.out.println("Eksperimento numeris: " + K);
